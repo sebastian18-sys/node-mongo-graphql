@@ -1,7 +1,17 @@
-## Note API with Nodejs, mongodb and graphql
+# Note API with Nodejs, mongodb and graphql
 
-## ENVIROMENTS 
+# ENVIROMENTS 
 
   ## - MONGO_DB_URI
   ## - MONGO_DB_URI_TEST
   ## - NODE_ENV
+
+# QUERIES
+
+  ## - notes
+  ## - users
+
+# MUTATIONS
+
+  ## - createNote
+  ## - createUser
