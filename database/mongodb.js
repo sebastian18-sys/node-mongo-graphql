@@ -1,4 +1,8 @@
 const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+
+dotenv.config()
+mongoose.set('strictQuery', true)
 
 const { MONGO_DB_URI, MONGO_DB_URI_TEST, NODE_ENV } = process.env
 
@@ -12,9 +16,7 @@ if (!connectionString) {
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true
+  useUnifiedTopology: true
 }).then(() => {
   console.log('Database connect!')
 }).catch(err => {
